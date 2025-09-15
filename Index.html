@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
 <a href="http://kubsu.ru/">КубГУ</a>
+
+
+<head>
+    <title>Форма</title>
+  </head>
+
+<form action="/"
+      method="POST">
+
+      <label>
+        ФИО:<br />
+        <input name="field-name-1"
+	type="name"
+	placeholder="Введите ваше ФИО" />
+      </label><br />
+
+      <label>
+        Текстовое поле email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+	<label>
+	Текстовое поле для телефона:<br/>
+	<input name ="field-phone"
+	type ="phone"
+	placeholder="Введите ваш телефон" />
+	</label><br/>
+
+
+      <label>
+        Текстовое поле даты:<br />
+        <input name="field-date"
+          value="2000-08-13"
+          type="date" />
+      </label><br/>
+
+      <label>
+        Выберите любимый ЯП:<br />
+        <select name="field-name-3">
+	multiple="multiple">
+          <option value="Python">Python</option>
+          <option value="Go">GO</option>
+          <option value="JS">JavaScript</option>
+        </select>
+      </label><br />
+	
+	Выберите пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+
+	
+
+
+	<label>
+        Биография:<br />
+	
+	<textarea
+	placeholder="Введите вашу биографию"
+	 name="field-name-2" /></textarea>
+        <placeholder="Введите вашу биографию"/>
+      </label><br/>
+
+
+	Подпись:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        С контрактом ознакомлен</label><br />
