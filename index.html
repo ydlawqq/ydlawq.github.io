@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Мой сайт</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+ <div class="logo"><img src="image.jpg" width="60" height="60"></div>
+ <h1>Мой сайт</h1>
+ <nav>
+   <a href="#links">Ссылки</a>
+   <a href="#table">Таблица</a>
+   <a href="#form">Форма</a>
+ </nav>
+</header>
+
+<main>
+<section id="links">
+<h2>Ссылки</h2>
+<ul>
+    <li><a href="http://kubsu.ru">1) абсолютную гиперссылку на главную страницу сайта kubsu.ru; </a></li>
+    
+    <li><a href="https://kubsu.ru">) абсолютную на главную сайта kubsu.ru в протоколе https;</a></li>
+    
+    <li><a href="https://kubsu.ru"><img src=""></a></li>
+    
+    <li><a href="/about.html">4) сокращенную ссылку на внутреннюю страницу;</a></li>
+    
+    <li><a href="/">5) сокращенную ссылку на главную страницу;</a></li>
+    
+    <li><a href="#phone-search">6) ссылку на фрагмент текущей страницы; </a></li>
+    
+    <li><a href="https://kubsu.ru/search?q=query&page=1&sort=asc">7) ссылку с тремя параметрами в URL; </a></li>
+    
+    <li><a href="https://kubsu.ru/user?id=12345">Ссылка с параметром ID в URL</a></li>
+    
+    <li><a href="contact.html">9) относительную на страницу в текущем каталоге; </a></li>
+    
+    <li><a href="about/history.html">10) относительную на страницу в каталоге about; </a></li>
+    
+    <li><a href="../index.html">11) относительную на страницу в каталоге уровнем выше текущего;</a></li>
+    
+    <li><a href="../../index.html">12) относительную на страницу в каталоге двумя уровнями выше</a></li>
+    
+    <li>13) контекстную в тексте абзаца;  <a href="https://kubsu.ru">гиперссылка</a> на сайт КубГУ.</li>
+   
+    <li><a href="https://www.kaggle.com#section2">С14) ссылку на фрагмент страницы стороннего сайта;</a></li>
+    
+    
+    <li>
+        15) ссылки из прямоугольных и круглых областей картинки (HTML-тег map);<br>
+        <map name="image-map">
+            <area shape="rect" coords="0,0,100,100" href="https://kubsu.ru/info.html">
+            <area shape="circle" coords="150,150,50" href="https://kubsu.ru/news.html">
+        </map>
+        <img src="" usemap="#image-map" alt="Пример карты изображений">
+    </li>
+    
+    
+    
+    <li><a href="">ссылку с пустым href;</a></li>
+    
+
+    <li><a>17) ссылку без href;</a></li>
+    
+
+    <li><a href="https://kubsu.ru/no-index-page.html" rel="nofollow">18) ссылку, по которой запрещен переход поисковикам;</a></li>
+    
+    <li><a href="https://kubsu.ru/no-index-page.html" rel="noindex nofollow">19) запрещенную для индексации поисковиками; </a></li>
+    
+  
+    <li>
+        <ol> 20) нумерованный список ссылок с подписями title;
+            <li><a href="https://kubsu.ru" title="Главная страница КУБСУ">Кубгу</a></li>
+            <li><a href="https://kubsu.ru/study" title="Обучение в университете">Кубгу обучение</a></li>
+            <li><a href="https://kubsu.ru/research" title="Научные исследования">Кубгу поиск</a></li>
+        </ol>
+    </li>
+    
+    
+    <li><a href="ftp://username:password@server.com/path/to/file.txt">21) ссылку на файл на сервере FTP с авторизацией;</a></li>
+</ul>
+
+</section>
+
+<section id="table">
+<h2>Таблица</h2>
+<table>
+ <tr><th>Имя</th><th>Возраст</th><th>Город</th><th>Статус</th></tr>
+ <tr><td>Иван</td><td>20</td><td>Москва</td><td>Студент</td></tr>
+ <tr><td>Мария</td><td>21</td><td>КубГУ</td><td>Учится</td></tr>
+ <tr><td>Петр</td><td>19</td><td>Краснодар</td><td>Студент</td></tr>
+ <tr><td>Ольга</td><td>22</td><td>Сочи</td><td>Выпускник</td></tr>
+ <tr><td>Анна</td><td>20</td><td>Ростов</td><td>Учится</td></tr>
+</table>
+</section>
+
+<section id="form">
+<h2>Форма</h2>
+<form action="/" method="post">
+ ФИО:<br>
+ <input name="fio"><br>
+ Email:<br>
+ <input type="email" name="email"><br>
+ Телефон:<br>
+ <input type="tel" name="phone" id="phone-search"><br>
+ Дата:<br>
+ <input type="date" name="date"><br>
+ ЯП:<br>
+ <select name="lang">
+  <option>Python</option>
+  <option>Go</option>
+  <option>JS</option>
+ </select><br>
+ Пол:<br>
+ <input type="radio" name="sex" value="m">Муж
+ <input type="radio" name="sex" value="f">Жен<br>
+ Биография:<br>
+ <textarea name="bio"></textarea><br>
+ <input type="checkbox" name="agree"> согласен<br>
+ <input type="submit" value="Отправить">
+</form>
+</section>
+</main>
+
+<footer>
+ <p>© Даниил Пальчков</p>
+</footer>
+
+</body>
+</html>
